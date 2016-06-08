@@ -1,4 +1,4 @@
 [submodule "sox-code"]
 	path = sox-code
-	url = https://github.com/erysaj/SoX-framework.git
+	url = https://github.com/erysaj/sox.git
 	branch = dev/iOS-framework
