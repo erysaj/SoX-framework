@@ -1,0 +1,4 @@
+[submodule "sox-code"]
+	path = sox-code
+	url = ../sox.git
+	branch = dev/iOS-framework
