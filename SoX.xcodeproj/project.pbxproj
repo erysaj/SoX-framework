@@ -201,6 +201,10 @@
 		440DC1141D08227A009BEDF3 /* xmalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 440DC0211D08227A009BEDF3 /* xmalloc.c */; };
 		440DC1151D08227A009BEDF3 /* xmalloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 440DC0221D08227A009BEDF3 /* xmalloc.h */; };
 		440DC1191D083CC6009BEDF3 /* soxconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 440DC1181D083CC6009BEDF3 /* soxconfig.h */; };
+		570020971DB135680003AA75 /* fmemopen.c in Sources */ = {isa = PBXBuildFile; fileRef = 570020931DB135680003AA75 /* fmemopen.c */; };
+		570020981DB135680003AA75 /* fmemopen.h in Headers */ = {isa = PBXBuildFile; fileRef = 570020941DB135680003AA75 /* fmemopen.h */; };
+		570020991DB135680003AA75 /* open_memstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 570020951DB135680003AA75 /* open_memstream.c */; };
+		5700209A1DB135680003AA75 /* open_memstream.h in Headers */ = {isa = PBXBuildFile; fileRef = 570020961DB135680003AA75 /* open_memstream.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -400,6 +404,10 @@
 		440DC1181D083CC6009BEDF3 /* soxconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soxconfig.h; sourceTree = "<group>"; };
 		44F568421CF7753E00ECA0D7 /* SoX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SoX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F568471CF7753E00ECA0D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		570020931DB135680003AA75 /* fmemopen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fmemopen.c; sourceTree = "<group>"; };
+		570020941DB135680003AA75 /* fmemopen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmemopen.h; sourceTree = "<group>"; };
+		570020951DB135680003AA75 /* open_memstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = open_memstream.c; sourceTree = "<group>"; };
+		570020961DB135680003AA75 /* open_memstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = open_memstream.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -441,6 +449,7 @@
 		440DBF411D08227A009BEDF3 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				570020921DB135680003AA75 /* fmemopen-ios */,
 				440DBF431D08227A009BEDF3 /* 8svx.c */,
 				440DBF441D08227A009BEDF3 /* adpcm.c */,
 				440DBF451D08227A009BEDF3 /* adpcm.h */,
@@ -673,6 +682,17 @@
 			path = SoX;
 			sourceTree = "<group>";
 		};
+		570020921DB135680003AA75 /* fmemopen-ios */ = {
+			isa = PBXGroup;
+			children = (
+				570020931DB135680003AA75 /* fmemopen.c */,
+				570020941DB135680003AA75 /* fmemopen.h */,
+				570020951DB135680003AA75 /* open_memstream.c */,
+				570020961DB135680003AA75 /* open_memstream.h */,
+			);
+			path = "fmemopen-ios";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -702,6 +722,7 @@
 				440DC06B1D08227A009BEDF3 /* dither.h in Headers */,
 				440DC0C21D08227A009BEDF3 /* rate_poly_fir0.h in Headers */,
 				440DC0B11D08227A009BEDF3 /* noisered.h in Headers */,
+				5700209A1DB135680003AA75 /* open_memstream.h in Headers */,
 				440DC0BF1D08227A009BEDF3 /* rate_filters.h in Headers */,
 				440DC0891D08227A009BEDF3 /* formats.h in Headers */,
 				440DC08C1D08227A009BEDF3 /* g711.h in Headers */,
@@ -722,6 +743,7 @@
 				440DC0831D08227A009BEDF3 /* fifo.h in Headers */,
 				440DC0C01D08227A009BEDF3 /* rate_half_fir.h in Headers */,
 				440DC0DC1D08227A009BEDF3 /* sox_i.h in Headers */,
+				570020981DB135680003AA75 /* fmemopen.h in Headers */,
 				440DC0AD1D08227A009BEDF3 /* mp3-util.h in Headers */,
 				440DC0A01D08227A009BEDF3 /* ladspa.h in Headers */,
 			);
@@ -819,6 +841,7 @@
 				440DC0B81D08227A009BEDF3 /* pad.c in Sources */,
 				440DC1031D08227A009BEDF3 /* voc.c in Sources */,
 				440DC0D71D08227A009BEDF3 /* sounder.c in Sources */,
+				570020971DB135680003AA75 /* fmemopen.c in Sources */,
 				440DC0D41D08227A009BEDF3 /* smp.c in Sources */,
 				440DC0671D08227A009BEDF3 /* delay.c in Sources */,
 				440DC08F1D08227A009BEDF3 /* g723_40.c in Sources */,
@@ -870,6 +893,7 @@
 				440DC0741D08227A009BEDF3 /* effects_i.c in Sources */,
 				440DC0D11D08227A009BEDF3 /* sinc.c in Sources */,
 				440DC0C61D08227A009BEDF3 /* remix.c in Sources */,
+				570020991DB135680003AA75 /* open_memstream.c in Sources */,
 				440DC0951D08227A009BEDF3 /* gsrt.c in Sources */,
 				440DC0CD1D08227A009BEDF3 /* s4-fmt.c in Sources */,
 				440DC1061D08227A009BEDF3 /* vox-fmt.c in Sources */,

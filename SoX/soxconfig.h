@@ -10,7 +10,7 @@
 //#define HAVE_COREAUDIO           1
 #define HAVE_FENV_H              1
 /* #undef HAVE_FLAC */
-/* #undef HAVE_FMEMOPEN */
+#define HAVE_FMEMOPEN            1
 #define HAVE_FSEEKO              1
 #define HAVE_GETTIMEOFDAY        1
 #define HAVE_GLOB_H              1
