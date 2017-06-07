@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+def sdkDir="/Users/eugene/Library/Android/sdk/"
+
+dependencies {
+    compile files(sdkDir+"/platforms/android-19/android.jar")
+}
+
+task ndkBuild(type: Exec) {
+    commandLine "/Users/andrey/Library/Android/sdk/ndk-bundle/ndk-build"
+}
+ndkBuild.outputs.dir "libs"
+ndkBuild.outputs.dir "obj"
+
+compileJava.dependsOn ndkBuild
+
+jar.version = '1.0'
+
+clean.dependsOn cleanNdkBuild
